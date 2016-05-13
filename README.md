@@ -18,6 +18,7 @@ So, save down the 'classes' and 'jars' directories and do the following:
 Verify the folder structure under classes is retained:
 
 > $ find .
+
 .
 
 ./scala
