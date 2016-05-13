@@ -1,14 +1,23 @@
 # basketcase
 
-Scala solution for adding particular fruits to a basket and ouputting the total cost.  Tests are written using JUnit
+Fruit Basket - Scala 
+---------------------
+
+Built using the following technologies:
+- Scala 2.11.8
+- JUnit 4
 
 The 'BasketCase' dir contains the src and test files
 
-I tried to do the honorable thing and 'package' this up so the tests can be run.  Easiest way I could think of to do this was to upload the classes and jars and give you the java command to execute.  
+I tried to do the honorable thing and 'package' this up so the tests can be run.  Easiest way I could think of to do this was to upload the classes and jars and supply the command to execute.  
 
-So, grab the classes and the jars and then cd into the 'classes' dir so your set up looks like so:
+So, save down the 'classes' and 'jars' directories and do the following:
 
-classes$ find .
+> $ cd classes
+
+Verify the folder structure under classes is retained:
+
+> $ find .
 .
 
 ./scala
@@ -51,9 +60,9 @@ classes$ find .
 
 ./scala/basketcase/ShoppingBasketTest.class
 
-Then, run the following command (filling in the appropriate paths on your system):
+From the 'classes' dir, run the following command (filling in the appropriate paths on your system):
 
-java -cp <path_to_jar_dir>/scala-library.jar:<path_to_jar_dir>/junit.jar:/<path_to_jar_dir>/org.hamcrest.core_1.3.0.jar: org.junit.runner.JUnitCore scala.basketcase.CheckoutTest
+> $ java -cp <path_to_jar_dir>/scala-library.jar:<path_to_jar_dir>/junit.jar:/<path_to_jar_dir>/org.hamcrest.core_1.3.0.jar: org.junit.runner.JUnitCore scala.basketcase.CheckoutTest
 
 I am on a Mac, using Java version 1.7.0_51
 
