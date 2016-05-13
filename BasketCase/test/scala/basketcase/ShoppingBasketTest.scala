@@ -1,7 +1,6 @@
 package scala.basketcase
 
 import scala.collection.mutable.ArrayBuffer
-import scala.math.BigDecimal.double2bigDecimal
 
 import org.junit.Assert.assertTrue
 import org.junit.Test

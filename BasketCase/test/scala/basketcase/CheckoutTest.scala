@@ -3,7 +3,7 @@ package scala.basketcase
 import scala.BigDecimal
 import scala.collection.mutable.ArrayBuffer
 
-import org.junit.Assert.assertEquals
+import org.junit.Assert._
 import org.junit.Test
 
 class CheckoutTest {
@@ -30,7 +30,5 @@ class CheckoutTest {
   def testTotalCostOfMultipleFruitsOfDifferentTypes() {
     val basket = ShoppingBasket(ArrayBuffer(Banana, Banana, Orange, Apple, Apple, Lemon, Peach))
     assertEquals(BigDecimal(2.40), Checkout.totalCost(basket))
-  }
-  
- 
+  } 
 }
