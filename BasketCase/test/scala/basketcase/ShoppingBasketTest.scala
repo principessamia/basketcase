@@ -1,6 +1,7 @@
 package scala.basketcase
 
 import scala.collection.mutable.ArrayBuffer
+import scala.math.BigDecimal.double2bigDecimal
 
 import org.junit.Assert.assertTrue
 import org.junit.Test
@@ -8,13 +9,13 @@ import org.junit.Test
 class ShoppingBasketTest {
   
   @Test
-  def testBasketIsEmptyOnCreate() {
+  def basketIsEmptyOnCreate() {
      val shopping = ShoppingBasket(ArrayBuffer());
      assertTrue(shopping.fruits.size == 0);
   }
   
   @Test
-  def testBasketCanBeEmptied() {
+  def basketCanBeEmptied() {
      val shopping = ShoppingBasket(ArrayBuffer(Banana));
      assertTrue(shopping.fruits.size == 1);
      shopping.empty();
@@ -22,14 +23,14 @@ class ShoppingBasketTest {
   }
   
   @Test
-  def testCanRemoveFruitFromBasket() {
+  def canRemoveFruitFromBasket() {
      val shopping = ShoppingBasket(ArrayBuffer(Banana, Peach));
      shopping.remove(Banana);
      assertTrue(shopping.fruits.size == 1);
   }
   
   @Test
-  def testAllFruitsHaveAValidPrice() {
+  def allFruitsHaveAValidPrice() {
     assertTrue(Banana.price > 0.0); 
     assertTrue(Peach.price > 0.0);
     assertTrue(Orange.price > 0.0);
@@ -38,7 +39,7 @@ class ShoppingBasketTest {
   } 
   
   @Test
-  def testBasketHasEnoughForOurFiveADay() {
+  def basketHasEnoughForOurFiveADay() {
       val basket = ShoppingBasket(ArrayBuffer(Banana, Orange, Apple, Lemon, Peach))
       assertTrue(basket.fruits.size >= 5)
   }  
