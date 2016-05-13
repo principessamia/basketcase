@@ -63,7 +63,7 @@ Verify the folder structure under classes is retained:
 
 From the 'classes' dir, run the following command (filling in the appropriate paths on your system):
 
-> $ java -cp <path_to_jar_dir>/scala-library.jar:<path_to_jar_dir>/junit.jar:/<path_to_jar_dir>/org.hamcrest.core_1.3.0.jar: org.junit.runner.JUnitCore scala.basketcase.CheckoutTest
+> $ java -cp path_to_jar_dir/scala-library.jar:path_to_jar_dir/junit.jar:/path_to_jar_dir/org.hamcrest.core_1.3.0.jar: org.junit.runner.JUnitCore scala.basketcase.CheckoutTest
 
 I am on a Mac, using Java version 1.7.0_51
 
