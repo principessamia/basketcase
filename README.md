@@ -10,6 +10,7 @@ So, grab the classes and the jars and then cd into the 'classes' dir so your set
 
 classes$ find .
 .
+
 ./scala
 
 ./scala/basketcase
@@ -51,6 +52,10 @@ classes$ find .
 ./scala/basketcase/ShoppingBasketTest.class
 
 Then, run the following command (filling in the appropriate paths on your system):
+
 java -cp <path_to_jar_dir>/scala-library.jar:<path_to_jar_dir>/junit.jar:/<path_to_jar_dir>/org.hamcrest.core_1.3.0.jar: org.junit.runner.JUnitCore scala.basketcase.CheckoutTest
 
 I am on a Mac, using Java version 1.7.0_51
+
+- CheckoutTest is the main test class
+- ShoppingBasketTest contains additional unit tests to verify additional isolated functionality
