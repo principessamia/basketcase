@@ -3,7 +3,7 @@
 Fruit Basket - Scala 
 ---------------------
 
-Built using the following technologies:
+Built using the following:
 - Scala 2.11.8
 - JUnit 4
 
