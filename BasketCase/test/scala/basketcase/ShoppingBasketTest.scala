@@ -1,9 +1,10 @@
 package scala.basketcase
 
-import org.junit.Test
-import org.junit.Assert._
 import scala.collection.mutable.ArrayBuffer
-import scala.basketcase.ShoppingBasket._
+import scala.math.BigDecimal.double2bigDecimal
+
+import org.junit.Assert.assertTrue
+import org.junit.Test
 
 class ShoppingBasketTest {
   

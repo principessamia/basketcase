@@ -1,9 +1,10 @@
 package scala.basketcase
 
+import scala.BigDecimal
 import scala.collection.mutable.ArrayBuffer
-import scala.basketcase.Checkout._
+
+import org.junit.Assert.assertEquals
 import org.junit.Test
-import org.junit.Assert._
 
 class CheckoutTest {
   
