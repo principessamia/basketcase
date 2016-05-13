@@ -11,28 +11,46 @@ So, grab the classes and the jars and then cd into the 'classes' dir so your set
 classes$ find .
 .
 ./scala
+
 ./scala/basketcase
+
 ./scala/basketcase/Apple$.class
+
 ./scala/basketcase/Apple.class
+
 ./scala/basketcase/Banana$.class
+
 ./scala/basketcase/Banana.class
+
 ./scala/basketcase/Checkout$$anonfun$1.class
+
 ./scala/basketcase/Checkout$.class
+
 ./scala/basketcase/Checkout.class
+
 ./scala/basketcase/CheckoutTest.class
+
 ./scala/basketcase/Fruit.class
+
 ./scala/basketcase/Lemon$.class
+
 ./scala/basketcase/Lemon.class
+
 ./scala/basketcase/Orange$.class
+
 ./scala/basketcase/Orange.class
+
 ./scala/basketcase/Peach$.class
+
 ./scala/basketcase/Peach.class
+
 ./scala/basketcase/ShoppingBasket$.class
+
 ./scala/basketcase/ShoppingBasket.class
+
 ./scala/basketcase/ShoppingBasketTest.class
 
-java -classpath <path_to_jar_dir>/scala-library.jar:<path_to_jar_dir>/junit.jar:/<path_to_jar_dir>/org.hamcrest.core_1.3.0.jar: org.junit.runner.JUnitCore scala.basketcase.CheckoutTest
-
-
+Then, run the following command (filling in the appropriate paths on your system):
+java -cp <path_to_jar_dir>/scala-library.jar:<path_to_jar_dir>/junit.jar:/<path_to_jar_dir>/org.hamcrest.core_1.3.0.jar: org.junit.runner.JUnitCore scala.basketcase.CheckoutTest
 
 I am on a Mac, using Java version 1.7.0_51
